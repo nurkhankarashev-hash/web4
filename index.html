@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea FC - Fan Portal & Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="chelsea-title fw-bold">🔵 Chelsea FC Official Fan Club</h1>
+        </header>
+
+        <section class="card shadow-sm p-4 mb-5">
+            <h2 class="h4 text-dark mb-3">Task 0-3: Contact Chelsea Support</h2>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="contactName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="contactMessage" class="form-label">Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="3" placeholder="Write your message here..." required></textarea>
+                    <div class="invalid-feedback">Message cannot be empty.</div>
+                </div>
+
+                <button type="submit" class="btn btn-chelsea">Send Message</button>
+            </form>
+        </section>
+
+        <section class="card shadow-sm p-4">
+            <h2 class="h4 text-dark mb-3">Task 4: Chelsea FC Fan Club Registration</h2>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                        <div class="invalid-feedback">First name is required.</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                        <div class="invalid-feedback">Last name is required.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="regEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="regEmail" placeholder="fan@chelseafc.com" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" minlength="6" required>
+                        <div class="invalid-feedback">Password must be at least 6 characters long.</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                        <div class="invalid-feedback">Passwords must match.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label d-block">Gender</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+                        <label class="form-check-label" for="genderMale">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                        <label class="form-check-label" for="genderFemale">Female</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label d-block">Favorite Match Activities </label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="hobbyMatch" value="match">
+                        <label class="form-check-label" for="hobbyMatch">Watching Matches</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="hobbyNews" value="news">
+                        <label class="form-check-label" for="hobbyNews">Reading News</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="hobbyGaming" value="gaming">
+                        <label class="form-check-label" for="hobbyGaming">EA FC / Gaming</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="hobbyGaming" value="live">
+                        <label class="form-check-label" for="hobbyGaming">Watching in Live</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                        <option selected disabled value="">Choose country...</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="UK">Uzbekistan</option>
+                        <option value="UK">Kyrgystan</option>
+                        <option value="UK">Tajikistan</option>
+                        <option value="UK">Azerbaijan</option>
+                        <option value="UK">Geargia</option>
+                        <option value="US">Armenia</option>
+                        <option value="UK">China</option>
+                        <option value="UK">RSA</option>
+                        <option value="UK">UAE</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="invalid-feedback">Please select your country.</div>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-chelsea">Register</button>
+                    <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+          'use strict'
+          const forms = document.querySelectorAll('.needs-validation')
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+    </script>
+</body>
+</html>

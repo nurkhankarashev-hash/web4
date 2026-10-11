@@ -1,0 +1,25 @@
+body {
+    background-color: #0e67bf;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.chelsea-title {
+    color: #034694; 
+}
+
+.card {
+    border: none;
+    border-top: 5px solid #034694;
+    border-radius: 10px;
+}
+
+.btn-chelsea {
+    background-color: #034694;
+    color: white;
+    border: none;
+}
+
+.btn-chelsea:hover {
+    background-color: #023670;
+    color: white;
+}
