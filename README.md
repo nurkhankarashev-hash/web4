@@ -10,7 +10,7 @@ In this assignment, I created HTML forms styled with Bootstrap 5 and added HTML5
 
 ## Screenshots
 
-### Task 0-2: Contact Form
+### Task 0-2: Contact Form:I created a simple contact form with name, email, and message fields using HTML5 and Bootstrap. Then, I added validation and feedback styles to check the entered data.
 
 ![Contact Form](image.png)
 
@@ -18,7 +18,7 @@ In this assignment, I created HTML forms styled with Bootstrap 5 and added HTML5
 
 ![Validation State](image-1.png)
 
-### Task 4: Registration Form
+### Task 4: Registration Form:I created a fan registration form with name, email, password, gender, hobbies, country, and submit buttons using Bootstrap layout and validation.
 
 ![Registration Form](image-2.png)
 
